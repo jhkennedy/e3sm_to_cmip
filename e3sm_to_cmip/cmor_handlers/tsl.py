@@ -9,8 +9,7 @@ import cmor
 import cdms2
 import logging
 
-from e3sm_to_cmip.util import print_message
-from cmor_handlers import levgrnd_bnds
+from e3sm_to_cmip.cmor_handlers import levgrnd_bnds
 
 # list of raw variable names needed
 RAW_VARIABLES = ['TSOI']

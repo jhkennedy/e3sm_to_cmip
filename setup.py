@@ -1,12 +1,4 @@
-import sys
-import os
 from setuptools import find_packages, setup
-
-
-cmor_handlers = [(sys.prefix + '/share/e3sm_to_cmip/cmor_handlers',
-                  [os.path.join('cmor_handlers', x) for x in
-                   os.listdir('cmor_handlers')])]
-
 
 setup(
     name="e3sm_to_cmor",
@@ -18,4 +10,4 @@ setup(
     entry_points={'console_scripts':
                   ['e3sm_to_cmip = e3sm_to_cmip.__main__:main']},
     packages=find_packages(),
-    data_files=cmor_handlers)
+    zip_safe=False)
