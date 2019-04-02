@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 QSOIL to evspsblsoi converter
 """

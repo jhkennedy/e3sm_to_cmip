@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 CLOUD to cl converter
 """

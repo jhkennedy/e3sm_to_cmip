@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 FSNS, FSDS to rsus converter
 """

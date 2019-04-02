@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 CLDTOT to clt converter
 """

@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 TS to ts converter
 """

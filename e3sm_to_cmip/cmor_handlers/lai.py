@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 LAISHA, LAISUN to lai converter
 """

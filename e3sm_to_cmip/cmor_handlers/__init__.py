@@ -1,3 +1,4 @@
+# coding=utf-8
 # see `docs/examples/levgrnd_bnds_generator.ipynb`
 levgrnd_bnds = [0,
                 0.01751106046140194,

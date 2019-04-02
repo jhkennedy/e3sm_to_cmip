@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 U10 to sfcWind converter
 """ 

@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 QREFHT to huss converter
 """

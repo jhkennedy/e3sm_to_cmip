@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 QVEGT, QSOIL to tran converter
 """

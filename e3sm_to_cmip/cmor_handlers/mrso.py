@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 SOILICE, SOILIQ to mrso converter
 """

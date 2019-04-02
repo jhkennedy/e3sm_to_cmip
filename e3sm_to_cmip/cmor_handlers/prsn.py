@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 PRECSC, PRECSL to prsn converter
 """

@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 SOILWATER_10CM to mrsos converter
 """

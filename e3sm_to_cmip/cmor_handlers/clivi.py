@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 TGCLDIWP to clivi converter
 """

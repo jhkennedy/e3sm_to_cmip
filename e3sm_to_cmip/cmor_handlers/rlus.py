@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 FLDS, FLNS to rlus converter
 """

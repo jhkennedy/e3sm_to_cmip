@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 QFLX to evspsbl converter
 """

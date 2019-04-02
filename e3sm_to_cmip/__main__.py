@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 """
 A python command line tool to turn E3SM model output into CMIP6 compatable data
 """
@@ -18,6 +19,7 @@ import cdms2
 import numpy as np
 
 from e3sm_to_cmip.util import format_debug, print_message
+from e3sm_to_cmip import cmor_handlers
 
 
 np.warnings.filterwarnings('ignore')
@@ -53,11 +55,7 @@ class Cmorizer(object):
         if handlers is not None:
             self._handlers_path = handlers
         else:
-            self._handlers_path = os.path.join(
-                sys.prefix,
-                'share',
-                'e3sm_to_cmip',
-                'cmor_handlers')
+            self._handlers_path = os.path.dirname(cmor_handlers.__file__)
 
         self._handlers_path = os.path.abspath(self._handlers_path)
         self._debug = kwargs.get('debug', False)
@@ -106,7 +104,7 @@ class Cmorizer(object):
 
             module_name, _ = handler.rsplit('.', 1)
 
-            # ignore handlers for variables that werent requested
+            # ignore handlers for variables that weren't requested
             if 'all' not in self._var_list:
                 if module_name not in self._var_list:
                     continue

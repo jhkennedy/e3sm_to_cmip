@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 QOVER to mrros converter
 """
