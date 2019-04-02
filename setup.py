@@ -8,6 +8,10 @@ setup(
     author_email="baldwin32@llnl.gov",
     description="Transform E3SM model data output into cmip6 compatable data "
                 "using the Climate Model Output Rewriter.",
+    install_requires=['cdms2',
+                      'cdutil',
+                      'cmor',
+                      'numpy'],
     entry_points={'console_scripts':
                   ['e3sm_to_cmip = e3sm_to_cmip.__main__:main']},
     packages=find_packages(),
