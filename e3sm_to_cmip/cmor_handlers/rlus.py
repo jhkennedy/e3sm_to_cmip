@@ -4,12 +4,12 @@ FLDS, FLNS to rlus converter
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-import os
-import cmor
-import cdms2
 import logging
+import os
 
-from e3sm_to_cmip.util import print_message
+import cdms2
+import cmor
+
 
 # list of raw variable names needed
 RAW_VARIABLES = ['FLDS', 'FLNS']

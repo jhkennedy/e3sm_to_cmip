@@ -1,19 +1,19 @@
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-import os, sys
 import argparse
-import cdms2
 import logging
-
-from imp import reload
-from random import uniform
+import os
+import sys
+from datetime import datetime
 from multiprocessing import cpu_count, Pool
+from random import uniform
 from subprocess import Popen, PIPE
 from time import sleep
-from datetime import datetime
 
+import cdms2
 from lib.util import format_debug, print_message
+
 
 class Splitter(object):
     """

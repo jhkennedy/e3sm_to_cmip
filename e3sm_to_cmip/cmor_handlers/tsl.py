@@ -4,12 +4,14 @@ TSOI to tsl converter
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-import os
-import cmor
-import cdms2
 import logging
+import os
+
+import cdms2
+import cmor
 
 from e3sm_to_cmip.cmor_handlers import levgrnd_bnds
+
 
 # list of raw variable names needed
 RAW_VARIABLES = ['TSOI']

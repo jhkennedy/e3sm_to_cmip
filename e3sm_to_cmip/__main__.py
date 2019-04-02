@@ -6,21 +6,20 @@ A python command line tool to turn E3SM model output into CMIP6 compatable data
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-
-import os
-import sys
 import argparse
-import re
-import logging
 import imp
-import cdms2
-
+import logging
+import os
+import re
+import sys
 from multiprocessing import cpu_count, Pool
-from time import sleep
+
+import cdms2
+import numpy as np
 
 from e3sm_to_cmip.util import format_debug, print_message
 
-import numpy as np
+
 np.warnings.filterwarnings('ignore')
 
 

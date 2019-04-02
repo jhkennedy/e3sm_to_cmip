@@ -4,13 +4,13 @@ SOILICE to mrfso converter
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-import os
-import cmor
-import cdms2
 import logging
+import os
+
+import cdms2
+import cmor
 import numpy as np
 
-from e3sm_to_cmip.util import print_message
 
 # list of raw variable names needed
 RAW_VARIABLES = ['SOILICE']

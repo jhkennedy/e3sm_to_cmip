@@ -4,13 +4,15 @@ RELHUM to hur converter
 from __future__ import absolute_import, division, print_function, \
     unicode_literals
 
-import os
-import cmor
-import cdms2
 import logging
+import os
+
+import cdms2
+import cmor
 import numpy
 
-from e3sm_to_cmip.util import print_message, plev19, hybrid_to_plevs
+from e3sm_to_cmip.util import hybrid_to_plevs
+
 
 # list of raw variable names needed
 RAW_VARIABLES = ['RELHUM']
