@@ -54,7 +54,6 @@ def handle(infiles, tables, user_input_path):
     logfile = os.path.join(os.getcwd(), 'logs')
     if not os.path.exists(logfile):
         os.makedirs(logfile)
-    _, tail = os.path.split(infile)
     logfile = os.path.join(logfile, VAR_NAME + '.log')
     cmor.setup(
         inpath=tables,
