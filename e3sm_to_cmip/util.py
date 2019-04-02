@@ -44,16 +44,19 @@ def print_message(message, status='error'):
     Prints a message with either a green + or a red -
 
     Parameters:
-        message (str): the message to print
-        status (str): th"""
+        message (AnyStr): the message to print
+        status (AnyStr): style the message for this kind of status
+    """
     if status == 'error':
-        print(colors.FAIL + '[-] ' + colors.ENDC + colors.BOLD + str(message)
+        print(colors.FAIL + '[-] ' + colors.ENDC + colors.BOLD + message
               + colors.ENDC)
     elif status == 'ok':
-        print(colors.OKGREEN + '[+] ' + colors.ENDC + str(message))
+        print(colors.OKGREEN + '[+] ' + colors.ENDC + message)
     elif status == 'debug':
-        print(colors.OKBLUE + '[*] ' + colors.ENDC + str(message)
+        print(colors.OKBLUE + '[*] ' + colors.ENDC + message
               + colors.OKBLUE + ' [*]' + colors.ENDC)
+    else:
+        print(message)
 
 
 def hybrid_to_plevs(var, hyam, hybm, ps, plev):
